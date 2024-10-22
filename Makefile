@@ -22,7 +22,7 @@ include Makethird
 # invocation line - specify XCFLAGS, XLDFLAGS, XLIB_LDFLAGS, XEXE_LDFLAGS or
 # XLIBS instead. Make ignores any lines in the makefile that set a variable
 # that was set on the command line.
-CFLAGS += $(XCFLAGS) -Iinclude
+CFLAGS += $(XCFLAGS) -Iinclude -fPIC
 LIBS += $(XLIBS) -lm
 
 LDFLAGS += $(XLDFLAGS)
