@@ -273,7 +273,7 @@
 
 #if !defined(HAVE_LEPTONICA) || !defined(HAVE_TESSERACT)
 #ifndef OCR_DISABLED
-#define OCR_DISABLED
+//#define OCR_DISABLED
 #endif
 #endif
 
