@@ -323,7 +323,7 @@ buffer_write(fz_context *ctx, void *opaque, const void *data, size_t len)
 static void
 buffer_seek(fz_context *ctx, void *opaque, int64_t off, int whence)
 {
-	fz_throw(ctx, FZ_ERROR_ARGUMENT, "cannot seek in buffer: %s", strerror(errno));
+	//fz_throw(ctx, FZ_ERROR_ARGUMENT, "cannot seek in buffer: %s", strerror(errno));
 }
 
 static int64_t
