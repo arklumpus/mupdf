@@ -13,7 +13,7 @@
 	defined(__AARCH64EL__) ||					\
 	defined(_MIPSEL) || defined(__MIPSEL) || defined(__MIPSEL__) ||	\
 	defined(_M_IX86) || defined(_M_X64) ||				\
-	defined(_M_IS64) || defined(_M_ARM)
+	defined(_M_IS64) || defined(_M_ARM) || defined(_M_ARM64)
 // It's a little-endian target architecture
 #   define L_LITTLE_ENDIAN
 #else
