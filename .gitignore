@@ -43,7 +43,8 @@ platform/win32/*.suo
 platform/win32/Debug
 platform/win32/DebugOpenssl
 platform/win32/Profile
-platform/win32/Release
+platform/win32/Release/*
 platform/win32/ReleaseOpenssl
 platform/win32/Memento
 platform/win32/x64
+!platform/win32/Release/bin2coff.exe
