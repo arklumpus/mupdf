@@ -513,7 +513,7 @@ copy ..\..\thirdparty\openssl\x64\lib\libssl-1_1-x64.dll $(Platform)\$(Configura
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>..\..\include;..\..\thirdparty\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;HAVE_LIBCRYPTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <WarningLevel>Level3</WarningLevel>
@@ -521,15 +521,15 @@ copy ..\..\thirdparty\openssl\x64\lib\libssl-1_1-x64.dll $(Platform)\$(Configura
       <MinimalRebuild />
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\thirdparty\openssl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <CustomBuildStep>
-      <Command>copy ..\..\thirdparty\openssl\lib\libcrypto-1_1.dll $(Configuration)\
-copy ..\..\thirdparty\openssl\lib\libssl-1_1.dll $(Configuration)\
-</Command>
+      <Command>
+      </Command>
       <Message>Copying Crypto DLLs</Message>
-      <Outputs>$(Configuration)/libcrypto-1_1.dll;$(Configuration)/libssl-1_1.dll</Outputs>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCommercial|Win32'">
