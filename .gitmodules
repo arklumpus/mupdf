@@ -33,7 +33,7 @@
 	url = https://github.com/ArtifexSoftware/thirdparty-freeglut.git
 [submodule "thirdparty/tesseract"]
 	path = thirdparty/tesseract
-	url = https://github.com/ArtifexSoftware/thirdparty-tesseract.git
+	url = https://github.com/arklumpus/thirdparty-tesseract.git
 [submodule "thirdparty/leptonica"]
 	path = thirdparty/leptonica
 	url = https://github.com/ArtifexSoftware/thirdparty-leptonica.git
